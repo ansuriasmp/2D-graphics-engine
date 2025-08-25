@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00C011DF-EC77-532C-557F-2C884156EE1C}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DemoEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Debug-windows-x86_64\DemoEngine\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\DemoEngine\</IntDir>
+    <TargetName>DemoEngine</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Release-windows-x86_64\DemoEngine\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\DemoEngine\</IntDir>
+    <TargetName>DemoEngine</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\Dist-windows-x86_64\DemoEngine\</OutDir>
+    <IntDir>..\bin-int\Dist-windows-x86_64\DemoEngine\</IntDir>
+    <TargetName>DemoEngine</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DemoEngine_PCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;YAML_CPP_STATIC_DEFINE;GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;Middleware;Middleware\GLFW\include;Middleware\Glad\include;Middleware\spdlog\include;Middleware\glm;Middleware\IMGUI;Middleware\enTT\single_include\entt;Middleware\ImGuizmo;Middleware\YAML-CPP\include;Middleware\Box2D\include;Middleware\SoLoud\include;Middleware\ENet\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DemoEngine_PCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;YAML_CPP_STATIC_DEFINE;GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;Middleware;Middleware\GLFW\include;Middleware\Glad\include;Middleware\spdlog\include;Middleware\glm;Middleware\IMGUI;Middleware\enTT\single_include\entt;Middleware\ImGuizmo;Middleware\YAML-CPP\include;Middleware\Box2D\include;Middleware\SoLoud\include;Middleware\ENet\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DemoEngine_PCH.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;YAML_CPP_STATIC_DEFINE;GLFW_INCLUDE_NONE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;Middleware;Middleware\GLFW\include;Middleware\Glad\include;Middleware\spdlog\include;Middleware\glm;Middleware\IMGUI;Middleware\enTT\single_include\entt;Middleware\ImGuizmo;Middleware\YAML-CPP\include;Middleware\Box2D\include;Middleware\SoLoud\include;Middleware\ENet\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Middleware\ImGuizmo\GraphEditor.h" />
+    <ClInclude Include="Middleware\ImGuizmo\ImCurveEdit.h" />
+    <ClInclude Include="Middleware\ImGuizmo\ImGradient.h" />
+    <ClInclude Include="Middleware\ImGuizmo\ImGuizmo.h" />
+    <ClInclude Include="Middleware\ImGuizmo\ImSequencer.h" />
+    <ClInclude Include="Middleware\ImGuizmo\ImZoomSlider.h" />
+    <ClInclude Include="src\Audio\AudioEngine.h" />
+    <ClInclude Include="src\Core\Application.h" />
+    <ClInclude Include="src\Core\Core.h" />
+    <ClInclude Include="src\Core\EntryPoint.h" />
+    <ClInclude Include="src\Core\Input.h" />
+    <ClInclude Include="src\Core\KeyCodes.h" />
+    <ClInclude Include="src\Core\Layer.h" />
+    <ClInclude Include="src\Core\LayerStack.h" />
+    <ClInclude Include="src\Core\MouseCodes.h" />
+    <ClInclude Include="src\Core\Timestep.h" />
+    <ClInclude Include="src\Core\UUID.h" />
+    <ClInclude Include="src\Core\Window.h" />
+    <ClInclude Include="src\DemoEngine.h" />
+    <ClInclude Include="src\DemoEngine_PCH.h" />
+    <ClInclude Include="src\Editor\EditorLayer.h" />
+    <ClInclude Include="src\Editor\Panels\InspectorPanel.h" />
+    <ClInclude Include="src\Editor\Panels\SceneHierarchyPanel.h" />
+    <ClInclude Include="src\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Events\Event.h" />
+    <ClInclude Include="src\Events\KeyEvent.h" />
+    <ClInclude Include="src\Events\MouseEvent.h" />
+    <ClInclude Include="src\GraphicsAPI\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\ImGui\ImGuiLibrary.h" />
+    <ClInclude Include="src\ImGui\imgui.h" />
+    <ClInclude Include="src\Logging\Log.h" />
+    <ClInclude Include="src\Math\Math.h" />
+    <ClInclude Include="src\Networking\NetStructs.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFrameBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebufferUtils.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLIndexBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLUniformBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexBuffer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsPlatformUtils.h" />
+    <ClInclude Include="src\Platform\WindowsWindow.h" />
+    <ClInclude Include="src\Renderer\2D\Renderer2D.h" />
+    <ClInclude Include="src\Renderer\2D\Renderer2DData.h" />
+    <ClInclude Include="src\Renderer\3D\Renderer3D.h" />
+    <ClInclude Include="src\Renderer\Camera\Camera.h" />
+    <ClInclude Include="src\Renderer\Camera\EditorCamera.h" />
+    <ClInclude Include="src\Renderer\Data\Buffer.h" />
+    <ClInclude Include="src\Renderer\Data\BufferLayout.h" />
+    <ClInclude Include="src\Renderer\Data\FrameBuffer.h" />
+    <ClInclude Include="src\Renderer\Data\IndexBuffer.h" />
+    <ClInclude Include="src\Renderer\Data\Primatives\CircleVertex.h" />
+    <ClInclude Include="src\Renderer\Data\Primatives\ColliderVertex.h" />
+    <ClInclude Include="src\Renderer\Data\Primatives\QuadVertex.h" />
+    <ClInclude Include="src\Renderer\Data\UniformBuffer.h" />
+    <ClInclude Include="src\Renderer\Data\VertexArray.h" />
+    <ClInclude Include="src\Renderer\Data\VertexBuffer.h" />
+    <ClInclude Include="src\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Renderer\Shader\Shader.h" />
+    <ClInclude Include="src\Renderer\Shader\ShaderLibrary.h" />
+    <ClInclude Include="src\Scene\Components.h" />
+    <ClInclude Include="src\Scene\Entity.h" />
+    <ClInclude Include="src\Scene\PlayerControllerSystem.h" />
+    <ClInclude Include="src\Scene\Scene.h" />
+    <ClInclude Include="src\Scene\SceneCamera.h" />
+    <ClInclude Include="src\Scene\SceneSerialiser.h" />
+    <ClInclude Include="src\Utils\PlatformUtils.h" />
+    <ClInclude Include="src\Utils\YamlConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Middleware\ImGuizmo\GraphEditor.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Middleware\ImGuizmo\ImCurveEdit.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Middleware\ImGuizmo\ImGradient.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Middleware\ImGuizmo\ImGuizmo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Middleware\ImGuizmo\ImSequencer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Audio\AudioEngine.cpp" />
+    <ClCompile Include="src\Core\Application.cpp" />
+    <ClCompile Include="src\Core\Layer.cpp" />
+    <ClCompile Include="src\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Core\UUID.cpp" />
+    <ClCompile Include="src\DemoEngine_PCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Editor\DemoEngineApp.cpp" />
+    <ClCompile Include="src\Editor\EditorLayer.cpp" />
+    <ClCompile Include="src\Editor\Panels\InspectorPanel.cpp" />
+    <ClCompile Include="src\Editor\Panels\SceneHierarchyPanel.cpp" />
+    <ClCompile Include="src\GraphicsAPI\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\ImGui\ImGuiBuild.cpp" />
+    <ClCompile Include="src\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Logging\Log.cpp" />
+    <ClCompile Include="src\Math\Math.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFrameBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLIndexBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLUniformBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexBuffer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsPlatformUtils.cpp" />
+    <ClCompile Include="src\Platform\WindowsInput.cpp" />
+    <ClCompile Include="src\Platform\WindowsWindow.cpp" />
+    <ClCompile Include="src\Renderer\2D\Renderer2D.cpp" />
+    <ClCompile Include="src\Renderer\3D\Renderer3D.cpp" />
+    <ClCompile Include="src\Renderer\Camera\EditorCamera.cpp" />
+    <ClCompile Include="src\Renderer\Data\Buffer.cpp" />
+    <ClCompile Include="src\Renderer\Data\FrameBuffer.cpp" />
+    <ClCompile Include="src\Renderer\Data\UniformBuffer.cpp" />
+    <ClCompile Include="src\Renderer\Data\VertexArray.cpp" />
+    <ClCompile Include="src\Renderer\Shader\Shader.cpp" />
+    <ClCompile Include="src\Renderer\Shader\ShaderLibrary.cpp" />
+    <ClCompile Include="src\Scene\Entity.cpp" />
+    <ClCompile Include="src\Scene\PlayerControllerSystem.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
+    <ClCompile Include="src\Scene\SceneCamera.cpp" />
+    <ClCompile Include="src\Scene\SceneSerialiser.cpp" />
+    <ClCompile Include="src\Utils\PlatformUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Middleware\GLFW\GLFW.vcxproj">
+      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\Glad\Glad.vcxproj">
+      <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\IMGUI\IMGUI.vcxproj">
+      <Project>{606F530D-CC83-7BBE-9505-1F1E01D977EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\YAML-CPP\YAML-CPP.vcxproj">
+      <Project>{A80C36E3-94D9-90EE-BDF2-7E96A91EC67C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\Box2D\Box2D.vcxproj">
+      <Project>{A434E80C-1049-10BE-D9CA-B31D459E0CEF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\SoLoud\SoLoud.vcxproj">
+      <Project>{5B657FD1-4707-AAA7-30C2-BDFB1C0331F8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Middleware\ENet\ENet.vcxproj">
+      <Project>{F13E847C-DD75-850D-8662-6B107278010F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

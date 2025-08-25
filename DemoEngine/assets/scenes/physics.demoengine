@@ -1,0 +1,364 @@
+Scene: Untitled Scene
+Entities:
+  - Entity: 7237867759219828389
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [-0.35446107, 3.1301205, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.92156863, 0.06776241, 0.74578524, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 2
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.8
+  - Entity: 15930261067741243734
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [1.7331759, 0.53522223, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.83442885, 2.9080997, 1]
+    SpriteRendererComponent:
+      Colour: [0.87868357, 0.9019608, 0.11053439, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 10613751788870947422
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [-4.016084, -3.1860988, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5816098, 0.5218553, 1]
+    SpriteRendererComponent:
+      Colour: [0.9264706, 0.027249161, 0.63554615, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 9965995776641569085
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [-1.4165485, 2.6777387, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.595113, 0.06776241, 0.92156863, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.1
+    AudioComponent:
+      FilePath: C:\Users\pedro\Desktop\coventry\AdvancedProgramming\DemoEngine\assets\audio\0100.wav
+      Loop: true
+      PlayOnStart: true
+  - Entity: 7294913767860739568
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Translation: [-2.1968186, -0.39569378, -0.0515023]
+      Rotation: [-0.020768119, -0.024266412, 0.34404907]
+      Scale: [1.7687203, 0.43753067, 0.99994147]
+    SpriteRendererComponent:
+      Colour: [0.9607843, 0.9183968, 0.9183968, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 1
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 11355506772892113226
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [3.1148305, 2.8378646, -4.656613e-10]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.92156863, 0.06776241, 0.24354619, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 2
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 1
+  - Entity: 2736158449504913022
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [0.14572448, 2.0885572, -0.0014038107]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.06776241, 0.8462327, 0.92156863, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: true
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.9
+  - Entity: 3631367146454858420
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [-2.8014967, 3.3895493, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.92156863, 0.06776241, 0.06776241, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.4
+  - Entity: 13629417844770054630
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [-4.6845064, 0.3044973, 0.037775014]
+      Rotation: [0.028384993, 0.014764719, 0.40104502]
+      Scale: [0.6056813, 4.5392747, 0.99999976]
+    SpriteRendererComponent:
+      Colour: [0.11053439, 0.9019608, 0.11053439, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 3911422090836937834
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [-1.8665369, 1.5938791, 0.040454168]
+      Rotation: [0.043018017, 0.01752089, 1.1444925]
+      Scale: [0.39999896, 2.3218145, 1]
+    SpriteRendererComponent:
+      Colour: [0.11053439, 0.2734751, 0.9019608, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 1510885386351753114
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [4.0381055, 0.7376102, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.48377326, 4, 1]
+    SpriteRendererComponent:
+      Colour: [0.11053439, 0.3433069, 0.9019608, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 4872589506051177817
+    TagComponent:
+      Tag: Main Camera
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 0
+        Perspective FOV: 1.0471976
+        PerspectiveNear: 0.01
+        PerspectiveFar: 1000
+        OrthographicSize: 10
+        OrthographicNear: -1
+        OrthographicFar: 1
+      Primary: true
+      FixedAspectRatio: false
+  - Entity: 1094681033623001728
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Translation: [3.1664975, -1.9394051, 0.058810234]
+      Rotation: [0.010112141, -0.01610863, -0.0041380725]
+      Scale: [2.1223714, 0.5050174, 0.9999554]
+    SpriteRendererComponent:
+      Colour: [0.11764705, 0.08737024, 0.04901961, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 1
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 10393822875578873692
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [-4.129981, 2.6777387, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.595113, 0.06776241, 0.92156863, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 0.1
+    AudioComponent:
+      FilePath: C:\Users\pedro\Desktop\coventry\AdvancedProgramming\DemoEngine\assets\audio\0100.wav
+      Loop: false
+      PlayOnStart: true
+  - Entity: 13026388975120554371
+    TagComponent:
+      Tag: Ground
+    TransformComponent:
+      Translation: [-0.25068587, -1.8657275, 0.0008000961]
+      Rotation: [0.003679715, 0.0010264134, 0.43189555]
+      Scale: [3.6329093, 0.49451336, 0.99999976]
+    SpriteRendererComponent:
+      Colour: [0.9117647, 0.53909266, 0.06704153, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 1
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 18350114097988763301
+    TagComponent:
+      Tag: Cube
+    TransformComponent:
+      Translation: [-3.098301, -3.8611636, 0]
+      Rotation: [0, 0, 0.35341454]
+      Scale: [3.4305387, 0.6839829, 1]
+    SpriteRendererComponent:
+      Colour: [0.8088235, 0.25281563, 0.21806517, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      Mass: 10
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 700349914687738911
+    TagComponent:
+      Tag: Circle
+    TransformComponent:
+      Translation: [2.78222, 4.8173156, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    CircleRendererComponent:
+      Colour: [0.92156863, 0.06776241, 0.74578524, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: false
+      Mass: 2
+      CenterOfMass: [0, 0]
+      Inertia: 1
+    CircleCollider2DComponent:
+      Offset: [0, 0]
+      Radius: 0.5
+      Density: 1
+      Friction: 0.5
+      Restitution: 1

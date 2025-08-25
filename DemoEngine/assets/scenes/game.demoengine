@@ -1,0 +1,136 @@
+Scene: Untitled Scene
+Entities:
+  - Entity: 16071013276523580147
+    TagComponent:
+      Tag: Wall
+    TransformComponent:
+      Translation: [0, 2.044736, 0]
+      Rotation: [0, 0, 0]
+      Scale: [10.565625, 0.53299344, 1]
+    SpriteRendererComponent:
+      Colour: [0.07350539, 0.3892599, 0.7892157, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      AffectedbyGravity: true
+      Mass: 0
+      CenterOfMass: [0, 0]
+      Inertia: 0
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+    AudioComponent:
+      FilePath: C:\Users\pedro\Desktop\coventry\AdvancedProgramming\DemoEngine\assets\audio\0100.wav
+      Loop: true
+      PlayOnStart: true
+  - Entity: 17510959533818342453
+    TagComponent:
+      Tag: Main Camera
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    CameraComponent:
+      Camera:
+        ProjectionType: 0
+        Perspective FOV: 1.0471976
+        PerspectiveNear: 0.01
+        PerspectiveFar: 1000
+        OrthographicSize: 10
+        OrthographicNear: -1
+        OrthographicFar: 1
+      Primary: true
+      FixedAspectRatio: false
+  - Entity: 7997790214936676781
+    TagComponent:
+      Tag: Wall
+    TransformComponent:
+      Translation: [0, -1.6938055, 0]
+      Rotation: [0, 0, 0]
+      Scale: [10.565625, 0.53299344, 1]
+    SpriteRendererComponent:
+      Colour: [0.86943656, 0.9117647, 0.1921857, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      AffectedbyGravity: true
+      Mass: 0
+      CenterOfMass: [0, 0]
+      Inertia: 0
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 17516184333609143492
+    TagComponent:
+      Tag: Wall
+    TransformComponent:
+      Translation: [-3.2039099, 0.010957974, -0.12568907]
+      Rotation: [0.03588027, -0.04558174, -1.567763]
+      Scale: [6.3579335, 0.53299254, 0.999999]
+    SpriteRendererComponent:
+      Colour: [0.7892157, 0.07350539, 0.76816535, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      AffectedbyGravity: true
+      Mass: 0
+      CenterOfMass: [0, 0]
+      Inertia: 0
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 12457348716449556520
+    TagComponent:
+      Tag: Wall
+    TransformComponent:
+      Translation: [3.292309, 0.013329744, 0.10853177]
+      Rotation: [0.03588027, -0.045581676, -1.567763]
+      Scale: [6.4497776, 0.53299254, 0.999999]
+    SpriteRendererComponent:
+      Colour: [0.15770662, 0.7892157, 0.07350539, 1]
+    Rigidbody2DComponent:
+      BodyType: 0
+      FixedRotation: false
+      AffectedbyGravity: true
+      Mass: 0
+      CenterOfMass: [0, 0]
+      Inertia: 0
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+  - Entity: 13588342437636786867
+    TagComponent:
+      Tag: Player
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [0.5, 0.5, 1]
+    SpriteRendererComponent:
+      Colour: [1, 1, 1, 1]
+    Rigidbody2DComponent:
+      BodyType: 2
+      FixedRotation: true
+      AffectedbyGravity: false
+      Mass: 0
+      CenterOfMass: [0, 0]
+      Inertia: 0
+    BoxCollider2DComponent:
+      Offset: [0, 0]
+      HalfSize: [0.5, 0.5]
+      Density: 1
+      Friction: 0.5
+      Restitution: 0
+    PlayerControllerComponent:
+      MoveForce: 10
